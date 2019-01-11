@@ -1,20 +1,24 @@
 import React from 'react'
 import './HeaderMenu.scss' 
+import {NavLink} from 'react-router-dom'
 
 const HeaderMenu = props => {
 
     const links = [
         {
             path: '/',
-            text: 'Главная'
+            text: 'Главная',
+            exact: true
         },
         {
             path: '/auth',
-            text: 'Авторизация'
+            text: 'Авторизация',
+            exact: true
         },
         {
-            path: '/about',
-            text: 'О нас'
+            path: '/quiz-creator',
+            text: 'Создать Quiz',
+            exact: true
         },
     ]
 
@@ -24,7 +28,7 @@ const HeaderMenu = props => {
                 {links.map((item, index) => {
                     return(
                         <li key={index}>
-                            <a href={item.path}>{item.text}</a>
+                            <NavLink to={item.path} exact={item.exact}>{item.text}</NavLink>
                         </li>
                     )
                 })}
