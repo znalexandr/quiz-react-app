@@ -1,0 +1,31 @@
+.header-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color:rgba(#FFF, .5);
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        a {
+            color: #000;
+            &.active {
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.active-quiz {
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    padding: 20px;
+
+    &__question {
+        font-size: 18px;
+        color:#FFF;
+        margin-bottom: 30px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__answer {
+        ul {
+            list-style: none;
+            padding:0;
+            margin:0;
+
+            li {
+                display: block;
+                padding:5px 10px;
+                color:#FFF;
+                border: 1px solid #FFF;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+
+                &:hover {
+                    background-color: rgba(#FFF, .2);
+                }
+
+                &.success {
+                    background-color: rgba(161, 240, 69, 1);
+                    font-weight: bold;
+                    color:#000;
+                }
+
+                &.error {
+                    background-color: rgba(240, 87, 108, 1);
+                    font-weight: bold;
+                    color:#000;
+                }
+            }
+        }
+    }
+}
