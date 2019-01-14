@@ -5,7 +5,7 @@ const Loader = props => {
 
     return(
         <div style={{textAlign:'center'}}>
-            <div class="Loader">
+            <div className="Loader">
                 <div />
                 <div />
                 <div />
