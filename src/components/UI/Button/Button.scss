@@ -36,4 +36,8 @@
     &_success {
         background-color: rgba(161, 240, 69, 1);
     }
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
 }
