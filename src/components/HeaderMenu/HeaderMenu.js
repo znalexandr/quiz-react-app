@@ -7,17 +7,12 @@ const HeaderMenu = props => {
     const links = [
         {
             path: '/',
-            text: 'Главная',
-            exact: true
-        },
-        {
-            path: '/auth',
-            text: 'Авторизация',
+            text: 'Список тестов',
             exact: true
         },
         {
             path: '/quiz-creator',
-            text: 'Создать Quiz',
+            text: 'Создать тест',
             exact: true
         },
     ]
